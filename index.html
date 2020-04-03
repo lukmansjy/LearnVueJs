@@ -9,6 +9,12 @@
     
     <div id="app">
         <p>{{ message }}</p>
+
+        <!-- Derective Text -->
+        <p v-text="messageWithHtml"></p>
+
+        <!-- Directive HTML -->
+        <p v-html="messageWithHtml"></p>
     </div>
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>
