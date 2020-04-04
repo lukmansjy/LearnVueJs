@@ -11,7 +11,8 @@ var app = new Vue({
         kilometers: 0,
         meters: 0,
         valueInput: '',
-        textarea: ''
+        textarea: '',
+        radioButton: ''
     },
     computed: {
         sum: function(){
