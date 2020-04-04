@@ -25,6 +25,12 @@
 
         <!-- Computed Properties-->
         <p>Result from {{ int1 }} + {{ int2 }} is {{ sum }}</p>
+
+        <!-- Method Properties-->
+        <p>Click Process to view result</p>
+        <button v-on:click="sumProcess(3)">Process</button>
+        <p v-if="result != null">Result: {{ result }}</p>
+        
     </div>
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>
