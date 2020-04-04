@@ -10,7 +10,8 @@ var app = new Vue({
         result: null,
         kilometers: 0,
         meters: 0,
-        valueInput: ''
+        valueInput: '',
+        textarea: ''
     },
     computed: {
         sum: function(){

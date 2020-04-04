@@ -41,6 +41,10 @@
         <input type="text" v-model="valueInput">
         <p>{{ valueInput }}</p>
         
+        <!-- Directive v-model in textarea -->
+        <textarea cols="30" rows="10" v-model="textarea"></textarea>
+        <p style="white-space: pre-line">{{ textarea }}</p>
+        
     </div>
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>
