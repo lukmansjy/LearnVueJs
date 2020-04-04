@@ -15,6 +15,13 @@
 
         <!-- Directive HTML -->
         <p v-html="messageWithHtml"></p>
+
+        <!-- Directive If -->
+        <p v-if="show">{{ message }}</p>
+        <p v-if="!show">{{ message }}</p>
+        
+        <p v-if="name == 'Lukman'">Hallo {{name}}</p>
+        <p v-else="name">Maaf nama anda bukan {{name}}</p>
     </div>
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>
