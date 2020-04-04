@@ -28,8 +28,13 @@
 
         <!-- Method Properties-->
         <p>Click Process to view result</p>
-        <button v-on:click="sumProcess(3)">Process</button>
+        <button v-on:click="sumProcess(3)">Process</button><br>
         <p v-if="result != null">Result: {{ result }}</p>
+        <br>
+
+        <!-- Watch Properties -->
+        <input type="text" v-model="kilometers"> Km ==
+        <input type="text" v-model="meters"> m
         
     </div>
     <script src="assets/vendor/vue.js"></script>
