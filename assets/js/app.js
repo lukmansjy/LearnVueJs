@@ -4,6 +4,13 @@ var app = new Vue({
         message: 'Hello World',
         messageWithHtml: '<b>Hello World</b>',
         show: true,
-        name: 'Lukman'
+        name: 'Lukman',
+        int1: 10,
+        int2: 15
+    },
+    computed: {
+        sum: function(){
+            return this.int1 + this.int2
+        }
     }
 })
