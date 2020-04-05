@@ -12,7 +12,9 @@ var app = new Vue({
         meters: 0,
         valueInput: '',
         textarea: '',
-        radioButton: ''
+        radioButton: '',
+        selectOneLanguage: '',
+        selectMoreLanguage: []
     },
     computed: {
         sum: function(){

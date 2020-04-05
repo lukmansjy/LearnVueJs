@@ -48,7 +48,30 @@
         <!-- Directive v-model in radiobutton -->
         <input type="radio" v-model="radioButton" value="option-1"> Option 1 <br>
         <input type="radio" v-model="radioButton" value="option-2"> Option 2 <br>
-        <p>Your choice is: {{ radioButton }}</p>        
+        <p>Your choice is: {{ radioButton }}</p>     
+        
+        <!-- Directive v-model in select dropdwon -->
+        Choice 1 your favorivte language:<br>
+        <select v-model="selectOneLanguage">
+            <option value="" disabled>Choice language</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Kotlin">Kotin</option>
+        </select>
+        <p>Your Language choice is: {{ selectOneLanguage }}</p>
+
+        Choice one and more your favorivte language:<br>
+        <select v-model="selectMoreLanguage" multiple>
+            <option value="" disabled>Choice language</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Kotlin">Kotin</option>
+        </select><br>
+        Your Language choice is:
+        <ul>
+            <li v-for="language in selectMoreLanguage">{{ language }}</li>
+        </ul>
+        
 
     </div>
     <script src="assets/vendor/vue.js"></script>
