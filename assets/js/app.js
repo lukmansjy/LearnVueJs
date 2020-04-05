@@ -14,7 +14,8 @@ var app = new Vue({
         textarea: '',
         radioButton: '',
         selectOneLanguage: '',
-        selectMoreLanguage: []
+        selectMoreLanguage: [],
+        checkbox: []
     },
     computed: {
         sum: function(){

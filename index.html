@@ -71,7 +71,22 @@
         <ul>
             <li v-for="language in selectMoreLanguage">{{ language }}</li>
         </ul>
-        
+
+        <!-- Directive v-model in checkbox -->
+        Choice your hobby<br>
+        <input type="checkbox" value="watching-movie" v-model="checkbox">
+        <label>Watching Movie</label><br>
+        <input type="checkbox" value="treveling" v-model="checkbox">
+        <label>Treveling</label><br>
+        <input type="checkbox" value="reading" v-model="checkbox">
+        <label>Reading</label><br>
+        <input type="checkbox" value="gaming" v-model="checkbox">
+        <label>Gaming</label><br>
+
+        Your hobby:
+        <ul>
+            <li v-for="cb in checkbox">{{ cb }}</li>
+        </ul>
 
     </div>
     <script src="assets/vendor/vue.js"></script>
