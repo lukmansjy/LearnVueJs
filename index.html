@@ -114,7 +114,18 @@
             @keyup.space="spaceKey"
             @keyup.65="aKey"
             v-model="messageKey"
-        >
+        ><br>
+
+        <!-- Data Type Array -->
+        <input type="text" v-model="vehicle">
+        <button @click="addVehicle">Add</button><br>
+        Vehicles:
+        <ul>
+            <li v-for="(vhcl, index ) in vehicles">
+                <button @click="removeVehicle(index)">X</button>
+                {{vhcl}}
+            </li>
+        </ul>
         
     </div>
     <script src="assets/vendor/vue.js"></script>

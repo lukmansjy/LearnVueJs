@@ -21,7 +21,9 @@ var app = new Vue({
         textStyle: 'color: red; font-size: 20px; font-weight: bold',
         messageClick: '',
         messageKeyEnter: '',
-        messageKey: ''
+        messageKey: '',
+        vehicles: ['Car', 'Bike', 'Motorcycle'],
+        vehicle: ''
     },
     computed: {
         sum: function(){
@@ -43,6 +45,13 @@ var app = new Vue({
         },
         aKey: function(){
             return this.messageKey = 'You press A key'
+        },
+        addVehicle: function(){
+            this.vehicles.push(this.vehicle)
+            this.vehicle = ''
+        },
+        removeVehicle: function(index){
+            return this.vehicles.splice(index, 1)
         }
     },
     watch: {
