@@ -19,7 +19,9 @@ var app = new Vue({
         imgSrc: 'assets/image/profile.png',
         googleUrl: 'https://google.com',
         textStyle: 'color: red; font-size: 20px; font-weight: bold',
-        messageClick: ''
+        messageClick: '',
+        messageKeyEnter: '',
+        messageKey: ''
     },
     computed: {
         sum: function(){
@@ -32,6 +34,15 @@ var app = new Vue({
         },
         showAlert: function(){
             alert('Alert show by @click')
+        },
+        escKey: function(){
+            return this.messageKey = 'You press esc key'
+        },
+        spaceKey: function(){
+            return this.messageKey = "You press space key"
+        },
+        aKey: function(){
+            return this.messageKey = 'You press A key'
         }
     },
     watch: {

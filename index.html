@@ -99,6 +99,23 @@
         <button @click="showAlert">Show Alert</button>
         <p>{{ messageClick }}</p>
 
+        <!-- Directive v-on for key modifier -->
+        Press Key Enter: 
+        <input
+            type="text"
+            v-on:keyup.enter="messageKeyEnter = 'You press key enter'"
+            v-model="messageKeyEnter"
+        ><br>
+
+        Press key esc, space, or A
+        <input
+            type="text"
+            @keyup.esc="escKey"
+            @keyup.space="spaceKey"
+            @keyup.65="aKey"
+            v-model="messageKey"
+        >
+        
     </div>
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>
