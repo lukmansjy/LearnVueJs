@@ -15,7 +15,10 @@ var app = new Vue({
         radioButton: '',
         selectOneLanguage: '',
         selectMoreLanguage: [],
-        checkbox: []
+        checkbox: [],
+        imgSrc: 'assets/image/profile.png',
+        googleUrl: 'https://google.com',
+        textStyle: 'color: red; font-size: 20px; font-weight: bold'
     },
     computed: {
         sum: function(){
