@@ -93,6 +93,12 @@
         Got to <a v-bind:href="googleUrl">Google</a><br>
         <p v-bind:style="textStyle">Text Style</p>
 
+        <!-- Directive v-on for event handler -->
+        <button v-on:click="messageClick = 'Click by v-on:click'">Click Me (v-on:click)</button>
+        <button @click="messageClick = 'Click by @click'">Click Me (@click)</button>
+        <button @click="showAlert">Show Alert</button>
+        <p>{{ messageClick }}</p>
+
     </div>
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>

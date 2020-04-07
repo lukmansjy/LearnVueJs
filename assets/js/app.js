@@ -18,7 +18,8 @@ var app = new Vue({
         checkbox: [],
         imgSrc: 'assets/image/profile.png',
         googleUrl: 'https://google.com',
-        textStyle: 'color: red; font-size: 20px; font-weight: bold'
+        textStyle: 'color: red; font-size: 20px; font-weight: bold',
+        messageClick: ''
     },
     computed: {
         sum: function(){
@@ -28,6 +29,9 @@ var app = new Vue({
     methods: {
         sumProcess: function(int3){
             return this.result = this.int1 + this.int2 + int3
+        },
+        showAlert: function(){
+            alert('Alert show by @click')
         }
     },
     watch: {
